@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/cpp-ethereum" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/cpp-ethereum/cmake/cable" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/cpp-ethereum/ethash" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/cpp-ethereum/evmc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/cpp-ethereum/scripts/dopple" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/cpp-ethereum/test/jsontests" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+usr/local/bin/ncc-qt usr/bin
+share/pixmaps/ncc32.xpm usr/share/pixmaps
+share/pixmaps/ncc16.xpm usr/share/pixmaps
+share/pixmaps/ncc128.png usr/share/pixmaps
+debian/ncc-qt.desktop usr/share/applications
+debian/ncc-qt.protocol usr/share/kde4/services/

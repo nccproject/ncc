@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=0.17.6
+Name=NCC Core
+Comment=Connect to the NCC P2P Network
+Exec=ncc-qt %u
+Terminal=false
+Type=Application
+Icon=ncc128
+MimeType=x-scheme-handler/ncc;
+Categories=Network;
+StartupWMClass=NCC-qt
+Name[en_US]=ncc-qt
