@@ -313,7 +313,7 @@ void BitcoinGUI::createActions()
     historyAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(historyAction);
 
-    NCCTokenAction = new QAction(platformStyle->MultiStatesIcon(":/icons/ncctoken"), tr("&NCCs"), this);
+    NCCTokenAction = new QAction(platformStyle->MultiStatesIcon(":/icons/ncctoken"), tr("&NRCs"), this);
     NCCTokenAction->setStatusTip(tr("NCC Tokens (send, receive or add Tokens in list)"));
     NCCTokenAction->setToolTip(NCCTokenAction->statusTip());
     NCCTokenAction->setCheckable(true);
