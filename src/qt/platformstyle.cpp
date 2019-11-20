@@ -242,6 +242,10 @@ void PlatformStyle::TableColor(PlatformStyle::TableColorType type, int &color, d
         opacity = 0.8;
         color = 0xd02e49;
         break;
+    case Generated:
+        opacity = 0.8;
+        color = 0x3b8a82;
+        break;
     default:
         break;
     }

@@ -58,7 +58,8 @@ public:
         Input,
         Inout,
         Output,
-        Error
+        Error,
+        Generated
     };
     QIcon TableColorIcon(const QString& resourcename, TableColorType type) const;
     QImage TableColorImage(const QString& resourcename, TableColorType type) const;
