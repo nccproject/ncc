@@ -582,7 +582,7 @@ void SetupServerArgs()
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/nccproject/ncc>";
-    const std::string URL_WEBSITE = "<https://ncc.org>";
+    const std::string URL_WEBSITE = "<https://ncccoin.biz>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i"), COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

@@ -1,7 +1,7 @@
 What is NCC?
 -------------
 
-NCC is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with NCC's Bitcoin-like UTXO blockchain. For more general information about NCC as well as links to join our community, go to https://ncc.org
+NCC is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with NCC's Bitcoin-like UTXO blockchain. For more general information about NCC as well as links to join our community, go to https://ncccoin.biz
 
 Welcome to the NCC Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on NCC, we highly recommend using either testnet or regtest mode. 
 
@@ -21,45 +21,7 @@ These are some resources that might be helpful in understanding NCC.
 
 Basic usage resources:
 
-* [User guide](https://docs.ncc.site/en/)
-* [NCC-Qt Wallet Tutorial](https://github.com/nccproject/documents/tree/master/en/NCC-Wallet-Tutorial#ncc-qt-wallet-tutorial)
-* [NCC staking tutorial](https://github.com/nccproject/documents/tree/master/en/How-to-Stake-with-NCC)
-* [NCC tutorial on Raspberry Pi](https://github.com/nccproject/documents/tree/master/en/NCC-on-Raspberry-Pi)
-* [Running NCC on Amazon AWS using NCC AMI](https://github.com/nccproject/documents/tree/master/en/NCC-AWS)
-* [Encrypting and unlocking wallet](https://github.com/nccproject/documents/tree/master/en/Encrypt-and-Unlock-NCC-Wallet)
-* [Testnet guide](https://github.com/nccproject/documents/blob/master/en/Testnet-User-Guide.md)
-* [Block explorer](https://ncc.info), [Older explorer](https://explorer.ncc.org)
-
-
-Development resources:
-
-* [NCC Book - A Developer's Guide To NCC](http://book.ncc.site/en/)
-* [NCC contract usage](https://docs.ncc.site/en/NCC20-Token-Introduce.html)
-* [Deploying a custom token to NCC](https://blog.ncc.org/ncc-custom-token-walkthrough-467d725fa27d)
-* [NCCJS document](https://nccproject.github.io/nccjs-doc/)
-* [Smart contract ICO example](http://book.ncc.site/en/part3/ico.htm)
-* [Early example faucet contract](http://earlz.net/view/2017/06/30/2144/the-ncc-sparknet-faucet)
-
-General Info about NCC:
-
-* [CIRCLERESEARCH NCC Primer](https://www.circle.com/marketing/pdfs/research/circle-research-ncc.pdf)
-* [NCC's PoS vs CASPER](https://www.reddit.com/r/NCC/comments/788oa5/nccs_pos_vs_casper_and_the_nothingatstake_problem/)
-* [Technical article explaining NCC's PoS model in depth](http://earlz.net/view/2017/07/27/1904/the-missing-explanation-of-proof-of-stake-version)
-
-
-Developer's Tools
------------------
-
-* Smart contract deployment tool
-  * https://github.com/nccproject/solar
-* DApp JavaScript Library
-  * https://github.com/nccproject/nccjs
-* A toolkit for building ncc light wallets
-  * https://github.com/nccproject/nccjs-wallet
-* CORS nccd RPC proxy for DApp
-  * https://github.com/nccproject/nccportal
-* Docker images for running ncc services
-  * https://github.com/nccproject/ncc-docker
+* [Block explorer](https://info.ncccoin.biz)
 * ncc.info API that powers the block explorer and the NCC Web wallet
   * https://github.com/nccproject/nccinfo-api#nccinfo-api-documentation
 
@@ -77,57 +39,8 @@ NCC Core currently implements the following:
 * Creating and interacting with smart contracts
 * Running a full node for distributing the blockchain to other users
 * "Prune" mode, which minimizes disk usage
-* Regtest mode, which enables developers to very quickly build their own private NCC network for Dapp testing
-* Testnet mode, using the public NCC Testnet, with faucet available
 * Compatibility with the Bitcoin Core set of RPC commands and APIs
 * Full SegWit capability with p2sh-segwit (legacy) and bech32 (native) addresses
-
-Alternative Wallets
--------------------
-
-NCC Core uses a full node model, and thus requires downloading the entire blockchain. If you do not need the entire blockchain, and do not intend on developing smart contracts, it may be more ideal to use an alternative wallet such as one of our light wallets that can be synchronized in a matter of seconds. 
-
-### NCC Web Wallet
-
-A browser wallet that supports the Ledger hardware wallet, offline cold wallet, and restoration from mobile wallets.
-
-Web site https://nccwallet.org
-
-User documentation https://github.com/nccproject/documents/tree/master/en/NCC-WebWallet-usage
-
-### NCC Electrum
-
-A light wallet that supports the Ledger and Trezor hardware wallets and is based on the well-known Electrum wallet software. 
-
-Download: https://github.com/nccproject/ncc-electrum/releases
-
-### iOS and Android Wallets
-
-These wallets run on mobile devices and synchronize quickly. 
-
-Android Download: https://play.google.com/store/apps/details?id=org.ncc.wallet
-
-iOS Download: https://github.com/nccproject/ncc-ios (open source, we are still working with Apple to get approval for their app store)
-
-### Ledger Chrome Wallet
-
-This light wallet runs in your Chrome browser as a browser extension. This wallet requires a Ledger device to use.
-
-How to install: https://ledger.zendesk.com/hc/en-us/articles/115003776913-How-to-install-and-use-NCC-with-Ledger
-
-
-### Community Resources
-
-Make sure to check out these resources as well for more information and to keep up to date with all the latest news about NCC. At least 1 developer is always around, so if you're developing on NCC and need help, we'd love to welcome you to our community.
-
-*	@NCCOfficial on Twitter https://twitter.com/nccofficial
-* NCC blog https://blog.ncc.org/
-*	NCC Telegram Group https://t.me/nccofficial, other languages available
-* NCC Discord https://discordapp.com/invite/wRfmkQ9
-*	/r/NCC on Reddit https://www.reddit.com/r/NCC/
-*	NCC.org https://ncc.org
-*	NCC on Facebook https://www.facebook.com/NCCOfficial/
-*	NCC Forum https://forum.ncc.org
 
 ### NCC Smart Contract Limitations
 
