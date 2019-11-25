@@ -207,10 +207,10 @@ UniValue getaddressdeltas(const JSONRPCRequest& request)
         "]\n"
             },
             RPCExamples{
-                HelpExampleCli("getaddressdeltas", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
-        + HelpExampleRpc("getaddressdeltas", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}") +
-                HelpExampleCli("getaddressdeltas", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500, \"chainInfo\": true}'")
-        + HelpExampleRpc("getaddressdeltas", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500, \"chainInfo\": true}")
+                HelpExampleCli("getaddressdeltas", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
+        + HelpExampleRpc("getaddressdeltas", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}") +
+                HelpExampleCli("getaddressdeltas", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500, \"chainInfo\": true}'")
+        + HelpExampleRpc("getaddressdeltas", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500, \"chainInfo\": true}")
             },
         }.ToString());
 
@@ -326,8 +326,8 @@ UniValue getaddressbalance(const JSONRPCRequest& request)
             "}\n"
                 },
                 RPCExamples{
-                    HelpExampleCli("getaddressbalance", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
-            + HelpExampleRpc("getaddressbalance", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}")
+                    HelpExampleCli("getaddressbalance", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
+            + HelpExampleRpc("getaddressbalance", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}")
                 },
             }.ToString());
 
@@ -397,10 +397,10 @@ UniValue getaddressutxos(const JSONRPCRequest& request)
             "]\n"
                 },
                 RPCExamples{
-                    HelpExampleCli("getaddressutxos", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
-            + HelpExampleRpc("getaddressutxos", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}") +
-                    HelpExampleCli("getaddressutxos", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"chainInfo\": true}'")
-            + HelpExampleRpc("getaddressutxos", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"chainInfo\": true}")
+                    HelpExampleCli("getaddressutxos", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
+            + HelpExampleRpc("getaddressutxos", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}") +
+                    HelpExampleCli("getaddressutxos", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"chainInfo\": true}'")
+            + HelpExampleRpc("getaddressutxos", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"chainInfo\": true}")
                 },
             }.ToString());
 
@@ -486,8 +486,8 @@ UniValue getaddressmempool(const JSONRPCRequest& request)
             "]\n"
                 },
                 RPCExamples{
-                    HelpExampleCli("getaddressmempool", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
-            + HelpExampleRpc("getaddressmempool", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}")
+                    HelpExampleCli("getaddressmempool", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
+            + HelpExampleRpc("getaddressmempool", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}")
                 },
             }.ToString());
 
@@ -686,10 +686,10 @@ UniValue getaddresstxids(const JSONRPCRequest& request)
             "]\n"
                 },
                 RPCExamples{
-                    HelpExampleCli("getaddresstxids", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
-            + HelpExampleRpc("getaddresstxids", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}") +
-                    HelpExampleCli("getaddresstxids", "'{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500}'")
-            + HelpExampleRpc("getaddresstxids", "{\"addresses\": [\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500}")
+                    HelpExampleCli("getaddresstxids", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}'")
+            + HelpExampleRpc("getaddresstxids", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"]}") +
+                    HelpExampleCli("getaddresstxids", "'{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500}'")
+            + HelpExampleRpc("getaddresstxids", "{\"addresses\": [\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\"], \"start\": 5000, \"end\": 5500}")
                 },
             }.ToString());
 
@@ -963,11 +963,11 @@ static UniValue verifymessage(const JSONRPCRequest& request)
             "\nUnlock the wallet for 30 seconds\n"
             + HelpExampleCli("walletpassphrase", "\"mypassphrase\" 30") +
             "\nCreate the signature\n"
-            + HelpExampleCli("signmessage", "\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"my message\"") +
+            + HelpExampleCli("signmessage", "\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"my message\"") +
             "\nVerify the signature\n"
-            + HelpExampleCli("verifymessage", "\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"signature\" \"my message\"") +
+            + HelpExampleCli("verifymessage", "\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"signature\" \"my message\"") +
             "\nAs a JSON-RPC call\n"
-            + HelpExampleRpc("verifymessage", "\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\", \"signature\", \"my message\"")
+            + HelpExampleRpc("verifymessage", "\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\", \"signature\", \"my message\"")
                 },
             }.ToString());
 
@@ -1021,7 +1021,7 @@ static UniValue signmessagewithprivkey(const JSONRPCRequest& request)
             "\nCreate the signature\n"
             + HelpExampleCli("signmessagewithprivkey", "\"privkey\" \"my message\"") +
             "\nVerify the signature\n"
-            + HelpExampleCli("verifymessage", "\"QD1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"signature\" \"my message\"") +
+            + HelpExampleCli("verifymessage", "\"ND1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"signature\" \"my message\"") +
             "\nAs a JSON-RPC call\n"
             + HelpExampleRpc("signmessagewithprivkey", "\"privkey\", \"my message\"")
                 },
