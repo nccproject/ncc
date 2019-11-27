@@ -11,7 +11,6 @@ src/test/test_bitcoin_fuzzy
 src/qt/test/test_bitcoin-qt
 
 # autoreconf
-Makefile.in
 aclocal.m4
 autom4te.cache/
 build-aux/config.guess
@@ -30,12 +29,10 @@ build-aux/test-driver
 config.log
 config.status
 configure
-libtool
 src/config/bitcoin-config.h
 src/config/bitcoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
-share/qt/Info.plist
 
 src/univalue/gen
 
@@ -81,7 +78,6 @@ src/qt/bitcoin-qt.includes
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
 bitcoin-qt
 Bitcoin-Qt.app
 background.tiff*
