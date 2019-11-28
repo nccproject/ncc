@@ -103,15 +103,15 @@ am__append_6 = -DVERIFY
 am__append_7 = exhaustive_tests
 am__append_8 = -I$(top_srcdir)
 am__append_9 = -Wall -Wextra -Wno-unused-function
-#am__append_10 = include/secp256k1_ecdh.h
-#am__append_11 = src/modules/ecdh/main_impl.h \
-#	src/modules/ecdh/tests_impl.h
-##am__append_12 = bench_ecdh
-#am__append_13 = include/secp256k1_recovery.h
-#am__append_14 =  \
-#	src/modules/recovery/main_impl.h \
-#	src/modules/recovery/tests_impl.h
-##am__append_15 = bench_recover
+am__append_10 = include/secp256k1_ecdh.h
+am__append_11 = src/modules/ecdh/main_impl.h \
+	src/modules/ecdh/tests_impl.h
+#am__append_12 = bench_ecdh
+am__append_13 = include/secp256k1_recovery.h
+am__append_14 =  \
+	src/modules/recovery/main_impl.h \
+	src/modules/recovery/tests_impl.h
+#am__append_15 = bench_recover
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps =  \
@@ -193,16 +193,16 @@ libsecp256k1_jni_la_OBJECTS = $(am_libsecp256k1_jni_la_OBJECTS)
 #	bench_internal$(EXEEXT)
 am__EXEEXT_2 = tests$(EXEEXT)
 am__EXEEXT_3 = exhaustive_tests$(EXEEXT)
-##am__EXEEXT_4 = bench_ecdh$(EXEEXT)
-##am__EXEEXT_5 = bench_recover$(EXEEXT)
+#am__EXEEXT_4 = bench_ecdh$(EXEEXT)
+#am__EXEEXT_5 = bench_recover$(EXEEXT)
 PROGRAMS = $(noinst_PROGRAMS)
 am__bench_ecdh_SOURCES_DIST = src/bench_ecdh.c
-##am_bench_ecdh_OBJECTS = src/bench_ecdh.$(OBJEXT)
+#am_bench_ecdh_OBJECTS = src/bench_ecdh.$(OBJEXT)
 bench_ecdh_OBJECTS = $(am_bench_ecdh_OBJECTS)
-##bench_ecdh_DEPENDENCIES =  \
-##	libsecp256k1.la \
-##	$(am__DEPENDENCIES_2) \
-##	$(am__DEPENDENCIES_3)
+#bench_ecdh_DEPENDENCIES =  \
+#	libsecp256k1.la \
+#	$(am__DEPENDENCIES_2) \
+#	$(am__DEPENDENCIES_3)
 am__bench_internal_SOURCES_DIST = src/bench_internal.c
 #am_bench_internal_OBJECTS = src/bench_internal-bench_internal.$(OBJEXT)
 bench_internal_OBJECTS = $(am_bench_internal_OBJECTS)
@@ -210,11 +210,11 @@ bench_internal_OBJECTS = $(am_bench_internal_OBJECTS)
 #	$(am__DEPENDENCIES_2) \
 #	$(am__DEPENDENCIES_3)
 am__bench_recover_SOURCES_DIST = src/bench_recover.c
-##am_bench_recover_OBJECTS = src/bench_recover.$(OBJEXT)
+#am_bench_recover_OBJECTS = src/bench_recover.$(OBJEXT)
 bench_recover_OBJECTS = $(am_bench_recover_OBJECTS)
-##bench_recover_DEPENDENCIES = libsecp256k1.la \
-##	$(am__DEPENDENCIES_2) \
-##	$(am__DEPENDENCIES_3)
+#bench_recover_DEPENDENCIES = libsecp256k1.la \
+#	$(am__DEPENDENCIES_2) \
+#	$(am__DEPENDENCIES_3)
 am__bench_sign_SOURCES_DIST = src/bench_sign.c
 #am_bench_sign_OBJECTS = src/bench_sign.$(OBJEXT)
 bench_sign_OBJECTS = $(am_bench_sign_OBJECTS)
@@ -561,13 +561,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/jeongwoo/NccBuild/ncc/src/secp256k1/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/jeongwoo/Git/ncc/src/secp256k1/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
-AUTOCONF = ${SHELL} /home/jeongwoo/NccBuild/ncc/src/secp256k1/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/jeongwoo/NccBuild/ncc/src/secp256k1/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/jeongwoo/NccBuild/ncc/src/secp256k1/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} /home/jeongwoo/Git/ncc/src/secp256k1/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/jeongwoo/Git/ncc/src/secp256k1/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/jeongwoo/Git/ncc/src/secp256k1/build-aux/missing automake-1.15
 AWK = mawk
 BREW = 
 BUILD_EXEEXT = 
@@ -615,7 +615,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
-MAKEINFO = ${SHELL} /home/jeongwoo/NccBuild/ncc/src/secp256k1/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/jeongwoo/Git/ncc/src/secp256k1/build-aux/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 NM = /usr/bin/nm -B
@@ -637,8 +637,8 @@ PKG_CONFIG_LIBDIR =
 PKG_CONFIG_PATH = 
 PORT = 
 RANLIB = /usr/bin/ranlib
-SECP_INCLUDES =  
-SECP_LIBS =   -lgmp
+SECP_INCLUDES = 
+SECP_LIBS = 
 SECP_TEST_INCLUDES =  
 SECP_TEST_LIBS = -lcrypto
 SED = /bin/sed
@@ -646,11 +646,11 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = /usr/bin/strip
 VERSION = 0.1
-_ACJNI_JAVAC = no
-abs_builddir = /home/jeongwoo/NccBuild/ncc/src/secp256k1
-abs_srcdir = /home/jeongwoo/NccBuild/ncc/src/secp256k1
-abs_top_builddir = /home/jeongwoo/NccBuild/ncc/src/secp256k1
-abs_top_srcdir = /home/jeongwoo/NccBuild/ncc/src/secp256k1
+_ACJNI_JAVAC = 
+abs_builddir = /home/jeongwoo/Git/ncc/src/secp256k1
+abs_srcdir = /home/jeongwoo/Git/ncc/src/secp256k1
+abs_top_builddir = /home/jeongwoo/Git/ncc/src/secp256k1
+abs_top_srcdir = /home/jeongwoo/Git/ncc/src/secp256k1
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CC_FOR_BUILD = gcc
@@ -680,7 +680,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/jeongwoo/NccBuild/ncc/src/secp256k1/build-aux/install-sh
+install_sh = ${SHELL} /home/jeongwoo/Git/ncc/src/secp256k1/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -770,10 +770,10 @@ gen_context_OBJECTS = gen_context.o
 gen_context_BIN = gen_context$(BUILD_EXEEXT)
 CLEANFILES = $(gen_context_BIN) src/ecmult_static_context.h $(JAVAROOT)/$(JAVAORG)/*.class .stamp-java
 EXTRA_DIST = autogen.sh src/gen_context.c src/basic-config.h $(JAVA_FILES)
-##bench_ecdh_SOURCES = src/bench_ecdh.c
-##bench_ecdh_LDADD = libsecp256k1.la $(SECP_LIBS) $(COMMON_LIB)
-##bench_recover_SOURCES = src/bench_recover.c
-##bench_recover_LDADD = libsecp256k1.la $(SECP_LIBS) $(COMMON_LIB)
+#bench_ecdh_SOURCES = src/bench_ecdh.c
+#bench_ecdh_LDADD = libsecp256k1.la $(SECP_LIBS) $(COMMON_LIB)
+#bench_recover_SOURCES = src/bench_recover.c
+#bench_recover_LDADD = libsecp256k1.la $(SECP_LIBS) $(COMMON_LIB)
 all: all-am
 
 .SUFFIXES:
