@@ -179,10 +179,7 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-//        vSeeds.emplace_back("ncc3.dynu.net"); // NCC mainnet
-//        vSeeds.emplace_back("ncc5.dynu.net"); // NCC mainnet
-//        vSeeds.emplace_back("ncc6.dynu.net"); // NCC mainnet
-//        vSeeds.emplace_back("ncc7.dynu.net"); // NCC mainnet
+        vSeeds.emplace_back("seed.ncccoin.biz"); // NCC mainnet
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,53);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,28);
